@@ -1,0 +1,135 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<title>Jahres-Abo|12 Ausgaben nach Hause</title>
+	<style>
+    	select {
+        	width: 250px;
+        	margin: 10px;
+    	}
+	select[name^=land] {
+		width: 7.7% !important;
+	}
+	select[name^=hundebesitzeroderunternehmen], select[name^=wieaufmerksamgeworden] {
+		width: 9% !important;
+	}
+	#submitbutton {
+		width: 20em;  height: 3em;
+	}
+	.red {
+		color:red;
+	}
+	.bigtext1 {
+		font-size: 22px;
+	}
+	.bigtext2 {
+		font-size: 20px;
+	}
+	</style>
+</head><body>
+	<p class="bigtext1"><span class="red">|</span> Jahres-Abo | 12 Ausgaben nach Hause</p>
+	<p>Du erhältst <b>12 Ausgaben</b> des Magazins <span class="red">DER HUND +</span> <b>2 Sonderhefte</b> zum Preis von 44,00 € bequem nach
+	<br>
+	Hause (inkl. MwSt. und Versandkosten nach Deutschland und Österreich).
+	<br>
+	Preise für Schweiz, BeNeLux auf Anfrage.
+	<br><br>
+	Als kleines Dankeschön für deine Bestellung kannst du dir eine Prämie nach Wahl zu deiner Bestellung
+	<br>
+	aussuchen.
+	<br><br>
+	Die Lieferung erfolgt monatlich innerhalb von 5 Werktagen nach Erscheinen.</p>
+	<hr color="red">
+	<p class="bigtext2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Bequem:</b> 12 Ausgaben im Jahr + 2 Sonderhefte portofrei lesen. Danach
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;monatlich kündbar!"</p>
+	<br>
+	<h3>Formular ausfüllen und 12 Ausgaben + 2 Sonderhefte <span class="red">DER HUND</span> bestellen!</h3>
+	<br>
+	<p><b>Möchtest du DER HUND als ePaper online oder als Magazin erhalten? <span class="red">*</span></b></p>
+	<form enctype="multipart/form-data" action="jahresabo.php" method="post">
+		<p>&nbsp;&nbsp;&nbsp;<input type="radio" name="printoronline" required="required" value="Online-Abo"><label for="printoronline"> Online-Abo</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		   <input type="radio" name="printoronline" required="required" value="Print-Abo"><label for="printoronline"> Print-Abo</label>
+		</p>&nbsp;&nbsp;&nbsp;
+		<img src="img/bild1.jpg" /> <img src="img/bild2.jpg" />	
+		<br>
+		<p><b>Bitte wähle eine Prämie aus: <span class="red">*</span></b></p>
+		<p>&nbsp;&nbsp;&nbsp;<input type="radio" name="praemie" required="required" value="gutschein"><label for="praemie"> 20,- € Scheckergutschein</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		   <input type="radio" name="praemie" required="required" value="buch"><label for="praemie"> Buch: "Anti-Giftköder-Training"</label>
+		</p>&nbsp;&nbsp;&nbsp;
+		<img src="img/bild3.jpg" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/bild4.jpg" />	
+		<br>
+		<br>
+
+		<p><label for="anrede">&nbsp;&nbsp;&nbsp;<b>Anrede <span class="red">*</span></b></label> <label for="titel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Titel</b></label></p>
+		<p>
+		<select name="anrede" required="required">
+			<option value="nichts gewählt" selected="selected"> - bitte wählen - </option>
+			<option value="Frau">Frau</option>
+			<option value="Herr">Herr</option>
+		</select>		
+		<select name="titel">
+			<option value=""></option>
+			<option value="Dr.">Dr.</option>
+			<option value="Prof.">Prof.</option>
+		</select>
+		</p>
+		
+		<p><label for="vorname">&nbsp;&nbsp;&nbsp;<b>Vorname <span class="red">*</span></b></label> <label for="titel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Nachname <span class="red">*</span></b></label></p>
+		<p>&nbsp;&nbsp;<input type="text" name="vorname" size="31" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nachname" size="30" required="required"></p>
+		
+		<p><label for="strassehausnr">&nbsp;&nbsp;&nbsp;<b>Straße, Hausnr. <span class="red">*</span></b></label> <label for="plz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>PLZ <span class="red">*</span></b></label><label for="ort">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ort <span class="red">*</span></b></label></p>
+		<p>&nbsp;&nbsp;<input type="text" name="strassehausnr" size="16" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="plz" size="16" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ort" size="16" required="required"></p>
+
+		<p><label for="land">&nbsp;&nbsp;&nbsp;<b>Land</b></label> <label for="telefon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Telefon</b></label> <label for="fax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Fax</b></label></p>
+		<p>
+		<select name="land">
+			<option value="DE" selected="selected">DE</option>
+			<option value="AT" >AT</option>
+			<option value="CH">CH</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;<input type="tel" name="telefon" size="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="fax" size="16"></p>
+
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="hundebesitzeroderunternehmen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Besitzt du einen Hund
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oder führst du ein   <label for="anderehaustiere">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Wie bist du auf DER</b></label>           
+		<br><label for="email">&nbsp;&nbsp;&nbsp;<b>Email <span class="red">*</span></b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hunde-Unternehmen? <span class="red">*</span>&nbsp;&nbsp;&nbsp; <b>HUND aufmerksam geworden?</b></p>
+		<p>&nbsp;&nbsp;<input type="email" name="email" size="16" required="required">&nbsp;
+		<select name="hundebesitzeroderunternehmen" required="required">
+			<option value="Hundebesitzer/interessierter" selected="selected">Hundebesitzer/interessierter</option>
+			<option value="Hunde Unternehmen">Hunde Unternehmen</option>
+			<option value="Hundeschule/Trainer">Hundeschule/Trainer</option>
+			<option value="Hundezüchter">Hundezüchter</option>
+			<option value="sonstiges" selected="selected">Sonstiges</option>
+		</select>
+		
+		<select name="wieaufmerksamgeworden">
+			<option value="nichts gewählt" selected="selected"> - bitte wählen - </option>
+			<option value="Empfehlung">pers. Empfehlung</option>
+			<option value="Google">Google</option>
+			<option value="Veranstaltung">Veranstaltung</option>
+			<option value="Flyer">Flyer</option>
+			<option value="Anzeige">Anzeige</option>
+			<option value="sonstiges">Sonstiges</option>
+		</select>
+		</p>
+		
+		<br>
+		<p><label for="agbscheckbox">&nbsp;&nbsp;&nbsp;AGB's <span class="red">*</span></label></p>
+		<p>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="agbscheckbox" required="required" value="Ich stimme den AGB's zu.">Ich stimme den AGB's zu</p>
+		<p>&nbsp;&nbsp;Bitte beachte die Hinweise zum <span class="red">Widerrufsrecht</span> und unsere <span class="red">Allgemeinen Geschäftsbedingungen</span> sowie die <span class="red">Datenschutzerklärung</span>.</p>
+		<br>
+		<p><b>Möchtest du unseren Newsletter sowie Info-Mails zu unseren Produkten von derhund.de erhalten?</b></p>
+		<p>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="newslettercheckbox" value="Ich will den Newsletter">ja</p>
+		<p class="red">Wie melde ich mich ab?</p>
+		<br>
+		<img src="img/antispammfeld.png" width="300px" height="75px"><br>
+		<p>Um SPAM-Anmeldungen und ungültige Bestellungen über dieses Formular zu vermeiden musst du bitte in diesem Feld einen Haken setzen - dadurch können wir nicht verwendbare
+		<br>Anmeldungen vermeiden und uns so vor SPAM schützen. Vielen Dank. Du siehst kein Feld zum Anhaken? Dann wende dich bitte an unseren Kundenservice unter <span class="red">service@forum-
+		<br>zeitschriften.de</span> oder telefonisch unter: <span class="red">08233/381-361</span>.</p>
+
+		<br>
+		<p>&nbsp;&nbsp;&nbsp;<input type="submit" id="submitbutton" value="1 Heft gratis bestellen"></p>	
+	</form>
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8">
+	<title>1 Ausgabe DER HUND gratis lesen</title>
+	<style>
+    	select {
+        	width: 250px;
+        	margin: 10px;
+    	}
+    	select:focus {
+        	min-width: 250px;
+        	width: auto;
+    	}
+	#submitbutton {
+		width: 20em;  height: 3em;
+	}
+	.red {
+		color:red;
+	}
+	</style>
+</head><body>
+	<h3>Hier bestellen und 1 Ausgabe DER HUND gratis lesen.</h3>
+	<p>Du erhältst 1 Ausgabe DER HUND gratis als Testleser dafür, dass du uns deine E-Mail-Adresse zur Übersendung unseres E-Mail-Newsletters mit unseren
+	<br />
+	Verlagsangeboten (Zeitungen, Zeitschriften, Abonnements, online, offline) zur Verfügung stellst.“</p>
+
+	<h4>Ich möchte 1x das Magazin DER HUND als Print-Ausgabe <span class="red">*</span></h4>
+	<form enctype="multipart/form-data" action="schnupperabo.php" method="post">
+		<p><input type="radio" name="bestellwunsch" required="required" value="Ich möchte 1 Print-Ausgabe bestellen."> 1 Print-Ausgabe</p>
+		<img src="img/printpreview.jpg" />
+		<br>
+		<br>
+		
+		<fieldset>
+		<p><label for="anrede">&nbsp;&nbsp;&nbsp;<b>Anrede <span class="red">*</span></b></label> <label for="titel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Titel</b></label></p>
+		<p>
+		<select name="anrede" required="required">
+			<option value=""></option>
+			<option value="Frau">Frau</option>
+			<option value="Herr">Herr</option>
+		</select>		
+		<select name="titel">
+			<option value=""></option>
+			<option value="Dr.">Dr.</option>
+			<option value="Prof.">Prof.</option>
+			<option value="Anderer">Anderer</option>                <!-- CARE IN ORIGINAL SITE A NEW INPUT APPEARS BELOW TO TYPE IN TEXT -->
+		</select>
+		</p>
+		
+		<p><label for="vorname">&nbsp;&nbsp;&nbsp;<b>Vorname <span class="red">*</span></b></label> <label for="titel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Nachname <span class="red">*</span></b></label></p>
+		<p>&nbsp;&nbsp;<input type="text" name="vorname" size="31" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nachname" size="30" required="required"></p>
+		
+		<p><label for="strassehausnr">&nbsp;&nbsp;&nbsp;<b>Straße, Hausnr. <span class="red">*</span></b></label> <label for="plz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>PLZ <span class="red">*</span></b></label><label for="ort">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ort <span class="red">*</span></b></label></p>
+		<p>&nbsp;&nbsp;<input type="text" name="strassehausnr" size="16" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="plz" size="16" required="required">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ort" size="16" required="required"></p>
+
+		<p><label for="land">&nbsp;&nbsp;&nbsp;<b>Land</b></label> <label for="telefon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Telefon</b></label></p>
+		<p>
+		<select name="land">
+			<option value="DE" selected="selected">DE</option>
+			<option value="AT">AT</option>
+			<option value="CH">CH</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" name="telefon" size="30"></p>
+
+		<p><label for="email">&nbsp;&nbsp;&nbsp;<b>Email <span class="red">*</span></b></label> <label for="hundebesitzeroderunternehmen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Besitzt du einen Hund oder führst du ein Hunde-Unternehmen?</b></label></p>
+		<p>&nbsp;&nbsp;<input type="email" name="email" size="31" required="required">
+		<select name="hundebesitzeroderunternehmen">
+			<option value="Hundebesitzer/interessierter" selected="selected">Hundebesitzer/interessierter</option>
+			<option value="Hunde Unternehmen">Hunde Unternehmen</option>
+			<option value="Hundeschule/Trainer">Hundeschule/Trainer</option>
+			<option value="Hundezüchter">Hundezüchter</option>
+		</select>
+		</p>
+
+		<p><label for="anderehaustiere">&nbsp;&nbsp;&nbsp;<b>Besitzt du noch andere Haustiere?</b></label></p>
+		<p>
+		<select name="anderehaustiere">
+			<option value="nein" selected="selected">nein</option>
+			<option value="Katze">Ja, Katze/n</option>
+			<option value="Pferd">Ja, Pferd/e</option>
+			<option value="Vögel">Ja, Vogel/Vögel</option>
+			<option value="sonstige">Ja, sonstige</option>
+		</select>
+		</p>
+		</fieldset>
+		
+		<br>
+		<p><label for="agbscheckbox">&nbsp;&nbsp;&nbsp;<b>AGB's <span class="red">*</span></b></label></p>
+		<p>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="agbscheckbox" required="required" value="Ich stimme den AGB's zu.">Ich stimme den AGB's zu</p>
+		<p>&nbsp;&nbsp;Bitte beachte die Hinweise zum <span class="red">Widerrufsrecht</span> und unsere <span class="red">Allgemeinen Geschäftsbedingungen</span> sowie die <span class="red">Datenschutzerklärung</span>.</p>
+		<br><img src="img/antispammfeld.png" width="300px" height="75px"><br>
+		<p>Um SPAM-Anmeldungen und ungültige Bestellungen über dieses Formular zu vermeiden musst du bitte in diesem Feld einen Haken setzen - dadurch können wir nicht verwendbare
+		<br>Anmeldungen vermeiden und uns so vor SPAM schützen. Vielen Dank. Du siehst kein Feld zum Anhaken? Dann wende dich bitte an unseren Kundenservice unter <span class="red">service@forum-
+		<br>zeitschriften.de</span> oder telefonisch unter: <span class="red">08233/381-361</span>.</p>
+		<br>
+		<p>&nbsp;&nbsp;&nbsp;<input type="submit" id="submitbutton" value="1 Heft gratis bestellen"></p>	
+	</form>
+</body></html>
